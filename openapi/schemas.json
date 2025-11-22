@@ -276,15 +276,7 @@
     },
     "libraryTopic": {
       "description": "Name of a topic in the library.",
-      "type": "string",
-      "enum": [
-        "wiki",
-        "open_food_facts",
-        "bcorp",
-        "eu_ecolabel",
-        "tco",
-        "fti"
-      ]
+      "type": "string"
     },
     "libraryItemShort": {
       "description": "Short summary of a library item.",

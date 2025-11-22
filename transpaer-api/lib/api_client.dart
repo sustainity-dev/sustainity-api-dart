@@ -208,8 +208,6 @@ class ApiClient {
           return LibraryItemFull.fromJson(value);
         case 'LibraryItemShort':
           return LibraryItemShort.fromJson(value);
-        case 'LibraryTopic':
-          return LibraryTopicTypeTransformer().decode(value);
         case 'LongText':
           return LongText.fromJson(value);
         case 'Medallion':

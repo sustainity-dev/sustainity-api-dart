@@ -43,7 +43,6 @@ part 'model/image.dart';
 part 'model/library_contents.dart';
 part 'model/library_item_full.dart';
 part 'model/library_item_short.dart';
-part 'model/library_topic.dart';
 part 'model/long_text.dart';
 part 'model/medallion.dart';
 part 'model/medallion_variant.dart';

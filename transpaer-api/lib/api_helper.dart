@@ -64,9 +64,6 @@ String parameterToString(dynamic value) {
   if (value is DataSource) {
     return DataSourceTypeTransformer().encode(value).toString();
   }
-  if (value is LibraryTopic) {
-    return LibraryTopicTypeTransformer().encode(value).toString();
-  }
   if (value is MedallionVariant) {
     return MedallionVariantTypeTransformer().encode(value).toString();
   }

@@ -250,12 +250,12 @@ class DefaultApi {
   ///
   /// Parameters:
   ///
-  /// * [LibraryTopic] topic (required):
+  /// * [String] topic (required):
   ///   Library topic.
-  Future<Response> getLibraryItemWithHttpInfo(LibraryTopic topic,) async {
+  Future<Response> getLibraryItemWithHttpInfo(String topic,) async {
     // ignore: prefer_const_declarations
     final path = r'/library/{topic}'
-      .replaceAll('{topic}', topic.toString());
+      .replaceAll('{topic}', topic);
 
     // ignore: prefer_final_locals
     Object? postBody;
@@ -284,9 +284,9 @@ class DefaultApi {
   ///
   /// Parameters:
   ///
-  /// * [LibraryTopic] topic (required):
+  /// * [String] topic (required):
   ///   Library topic.
-  Future<LibraryItemFull?> getLibraryItem(LibraryTopic topic,) async {
+  Future<LibraryItemFull?> getLibraryItem(String topic,) async {
     final response = await getLibraryItemWithHttpInfo(topic,);
     if (response.statusCode >= HttpStatus.badRequest) {
       throw ApiException(response.statusCode, await _decodeBodyBytes(response));
