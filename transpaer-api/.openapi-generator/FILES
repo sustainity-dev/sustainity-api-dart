@@ -17,7 +17,6 @@ doc/Image.md
 doc/LibraryContents.md
 doc/LibraryItemFull.md
 doc/LibraryItemShort.md
-doc/LibraryTopic.md
 doc/LongText.md
 doc/Medallion.md
 doc/MedallionVariant.md
@@ -71,7 +70,6 @@ lib/model/image.dart
 lib/model/library_contents.dart
 lib/model/library_item_full.dart
 lib/model/library_item_short.dart
-lib/model/library_topic.dart
 lib/model/long_text.dart
 lib/model/medallion.dart
 lib/model/medallion_variant.dart
@@ -116,7 +114,6 @@ test/image_test.dart
 test/library_contents_test.dart
 test/library_item_full_test.dart
 test/library_item_short_test.dart
-test/library_topic_test.dart
 test/long_text_test.dart
 test/medallion_test.dart
 test/medallion_variant_test.dart

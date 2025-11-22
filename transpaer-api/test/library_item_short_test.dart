@@ -16,7 +16,8 @@ void main() {
   // final instance = LibraryItemShort();
 
   group('test LibraryItemShort', () {
-    // LibraryTopic id
+    // Name of a topic in the library.
+    // String id
     test('to test the property `id`', () async {
       // TODO
     });

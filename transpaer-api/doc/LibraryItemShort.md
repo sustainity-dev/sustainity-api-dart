@@ -8,7 +8,7 @@ import 'package:transpaer_api/api.dart';
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | [**LibraryTopic**](LibraryTopic.md) |  | 
+**id** | **String** | Name of a topic in the library. | 
 **title** | **String** | Short string for labels, titles, summaries... | 
 **summary** | **String** | Short string for labels, titles, summaries... | 
 

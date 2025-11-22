@@ -198,7 +198,7 @@ Returns a full library item.
 import 'package:transpaer_api/api.dart';
 
 final api_instance = DefaultApi();
-final topic = ; // LibraryTopic | Library topic.
+final topic = topic_example; // String | Library topic.
 
 try {
     final result = api_instance.getLibraryItem(topic);
@@ -212,7 +212,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **topic** | [**LibraryTopic**](.md)| Library topic. | 
+ **topic** | **String**| Library topic. | 
 
 ### Return type
 

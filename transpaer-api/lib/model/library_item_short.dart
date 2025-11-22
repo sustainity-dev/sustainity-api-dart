@@ -18,7 +18,8 @@ class LibraryItemShort {
     required this.summary,
   });
 
-  LibraryTopic id;
+  /// Name of a topic in the library.
+  String id;
 
   /// Short string for labels, titles, summaries...
   String title;
@@ -69,7 +70,7 @@ class LibraryItemShort {
       }());
 
       return LibraryItemShort(
-        id: LibraryTopic.fromJson(json[r'id'])!,
+        id: mapValueOfType<String>(json, r'id')!,
         title: mapValueOfType<String>(json, r'title')!,
         summary: mapValueOfType<String>(json, r'summary')!,
       );

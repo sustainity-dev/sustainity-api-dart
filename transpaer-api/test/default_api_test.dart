@@ -57,7 +57,7 @@ void main() {
     //
     // Returns a full library item.
     //
-    //Future<LibraryItemFull> getLibraryItem(LibraryTopic topic) async
+    //Future<LibraryItemFull> getLibraryItem(String topic) async
     test('test getLibraryItem', () async {
       // TODO
     });
