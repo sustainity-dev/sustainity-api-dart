@@ -61,9 +61,6 @@ String parameterToString(dynamic value) {
   if (value is CategoryStatus) {
     return CategoryStatusTypeTransformer().encode(value).toString();
   }
-  if (value is DataSource) {
-    return DataSourceTypeTransformer().encode(value).toString();
-  }
   if (value is MedallionVariant) {
     return MedallionVariantTypeTransformer().encode(value).toString();
   }

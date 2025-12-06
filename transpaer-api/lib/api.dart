@@ -36,7 +36,6 @@ part 'model/category_alternatives.dart';
 part 'model/category_full.dart';
 part 'model/category_short.dart';
 part 'model/category_status.dart';
-part 'model/data_source.dart';
 part 'model/eu_ecolabel_medallion.dart';
 part 'model/fti_medallion.dart';
 part 'model/image.dart';

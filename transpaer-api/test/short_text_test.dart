@@ -22,7 +22,8 @@ void main() {
       // TODO
     });
 
-    // DataSource source_
+    // Describes where the related data was retrieved from.
+    // String source_
     test('to test the property `source_`', () async {
       // TODO
     });
