@@ -19,7 +19,8 @@ class Image {
 
   String image;
 
-  DataSource source_;
+  /// Describes where the related data was retrieved from.
+  String source_;
 
   @override
   bool operator ==(Object other) => identical(this, other) || other is Image &&
@@ -62,7 +63,7 @@ class Image {
 
       return Image(
         image: mapValueOfType<String>(json, r'image')!,
-        source_: DataSource.fromJson(json[r'source'])!,
+        source_: mapValueOfType<String>(json, r'source')!,
       );
     }
     return null;

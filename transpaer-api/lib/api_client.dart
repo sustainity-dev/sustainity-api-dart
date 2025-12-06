@@ -194,8 +194,6 @@ class ApiClient {
           return CategoryShort.fromJson(value);
         case 'CategoryStatus':
           return CategoryStatusTypeTransformer().decode(value);
-        case 'DataSource':
-          return DataSourceTypeTransformer().decode(value);
         case 'EuEcolabelMedallion':
           return EuEcolabelMedallion.fromJson(value);
         case 'FtiMedallion':

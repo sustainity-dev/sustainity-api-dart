@@ -20,7 +20,8 @@ class ShortText {
   /// Short string for labels, titles, summaries...
   String text;
 
-  DataSource source_;
+  /// Describes where the related data was retrieved from.
+  String source_;
 
   @override
   bool operator ==(Object other) => identical(this, other) || other is ShortText &&
@@ -63,7 +64,7 @@ class ShortText {
 
       return ShortText(
         text: mapValueOfType<String>(json, r'text')!,
-        source_: DataSource.fromJson(json[r'source'])!,
+        source_: mapValueOfType<String>(json, r'source')!,
       );
     }
     return null;

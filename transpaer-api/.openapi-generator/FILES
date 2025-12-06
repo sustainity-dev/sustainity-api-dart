@@ -9,7 +9,6 @@ doc/CategoryAlternatives.md
 doc/CategoryFull.md
 doc/CategoryShort.md
 doc/CategoryStatus.md
-doc/DataSource.md
 doc/DefaultApi.md
 doc/EuEcolabelMedallion.md
 doc/FtiMedallion.md
@@ -63,7 +62,6 @@ lib/model/category_alternatives.dart
 lib/model/category_full.dart
 lib/model/category_short.dart
 lib/model/category_status.dart
-lib/model/data_source.dart
 lib/model/eu_ecolabel_medallion.dart
 lib/model/fti_medallion.dart
 lib/model/image.dart
@@ -106,7 +104,6 @@ test/category_alternatives_test.dart
 test/category_full_test.dart
 test/category_short_test.dart
 test/category_status_test.dart
-test/data_source_test.dart
 test/default_api_test.dart
 test/eu_ecolabel_medallion_test.dart
 test/fti_medallion_test.dart
