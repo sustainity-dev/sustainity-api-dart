@@ -23,8 +23,8 @@ void main() {
     });
 
     // Describes where the related data was retrieved from.
-    // String source_
-    test('to test the property `source_`', () async {
+    // List<String> sources (default value: const [])
+    test('to test the property `sources`', () async {
       // TODO
     });
 

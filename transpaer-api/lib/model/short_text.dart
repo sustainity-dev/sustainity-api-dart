@@ -14,33 +14,33 @@ class ShortText {
   /// Returns a new [ShortText] instance.
   ShortText({
     required this.text,
-    required this.source_,
+    this.sources = const [],
   });
 
   /// Short string for labels, titles, summaries...
   String text;
 
   /// Describes where the related data was retrieved from.
-  String source_;
+  List<String> sources;
 
   @override
   bool operator ==(Object other) => identical(this, other) || other is ShortText &&
     other.text == text &&
-    other.source_ == source_;
+    _deepEquality.equals(other.sources, sources);
 
   @override
   int get hashCode =>
     // ignore: unnecessary_parenthesis
     (text.hashCode) +
-    (source_.hashCode);
+    (sources.hashCode);
 
   @override
-  String toString() => 'ShortText[text=$text, source_=$source_]';
+  String toString() => 'ShortText[text=$text, sources=$sources]';
 
   Map<String, dynamic> toJson() {
     final json = <String, dynamic>{};
       json[r'text'] = this.text;
-      json[r'source'] = this.source_;
+      json[r'sources'] = this.sources;
     return json;
   }
 
@@ -64,7 +64,9 @@ class ShortText {
 
       return ShortText(
         text: mapValueOfType<String>(json, r'text')!,
-        source_: mapValueOfType<String>(json, r'source')!,
+        sources: json[r'sources'] is Iterable
+            ? (json[r'sources'] as Iterable).cast<String>().toList(growable: false)
+            : const [],
       );
     }
     return null;
@@ -113,7 +115,7 @@ class ShortText {
   /// The list of required keys that must be present in a JSON.
   static const requiredKeys = <String>{
     'text',
-    'source',
+    'sources',
   };
 }
 
